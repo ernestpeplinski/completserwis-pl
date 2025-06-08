@@ -1,0 +1,506 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ef 0%, #f4f4f4 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+}
+.header {
+    background: linear-gradient(100deg, #0d3a5a 0%, #1976d2 60%, #ffd600 100%);
+    box-shadow: 0 4px 18px rgba(13,58,90,0.13);
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: background 0.4s;
+}
+.header-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 4vw 10px 4vw;
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+.header-center {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+.logo {
+    height: 38px;
+    margin-right: 10px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.13));
+    transition: transform 0.2s;
+}
+.logo:hover {
+    transform: scale(1.08) rotate(-4deg);
+}
+.workshop-name {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    background: rgba(255,255,255,0.13);
+    padding: 6px 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 2px solid rgba(255,255,255,0.18);
+    text-shadow: 0 2px 8px rgba(13,58,90,0.13);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 6px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.complet {
+    color: #ffd600;
+    font-weight: 900;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 0 2px 8px rgba(255,214,0,0.25);
+    letter-spacing: 1.5px;
+}
+.serwis {
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 0 2px 8px rgba(13,58,90,0.13);
+    letter-spacing: 1.5px;
+}
+.header-tags {
+    display: flex;
+    gap: 6px;
+    margin-left: 16px;
+    align-items: center;
+}
+.tag {
+    font-size: 0.85rem;
+    background: rgba(255,255,255,0.18);
+    color: #222;
+    border-radius: 6px;
+    padding: 2px 10px 2px 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    border: 1px solid #ffe082;
+    opacity: 0.85;
+}
+.tag-mechanika, .tag-klima {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #222 !important;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 6px 0 0 !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: none;
+}
+.tag-mechanika:hover, .tag-klima:hover {
+    background: none !important;
+    color: #222 !important;
+    border: none !important;
+    cursor: default;
+}
+.header-tags-outside {
+    display: flex;
+    gap: 6px;
+    margin-left: 8px;
+    flex-wrap: wrap;
+}
+.header-tags-outside .tag {
+    font-size: 0.8rem;
+    padding: 2px 7px 2px 7px;
+    border-radius: 6px;
+    gap: 4px;
+    background: #fffde7;
+    color: #bfa600;
+    border: 1.5px solid #ffd600;
+    opacity: 0.92;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    transition: background 0.2s, border 0.2s;
+}
+.tag-motoryzacja {
+    background: #e3f2fd;
+    color: #1976d2;
+    border-color: #90caf9;
+}
+.safety {
+    text-align: center;
+    margin: 48px 0 32px 0;
+}
+.safety h2 {
+    color: #0d3a5a;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.services {
+    background: rgba(255,255,255,0.98);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(13,58,90,0.07);
+    margin: 0 auto 36px auto;
+    max-width: 950px;
+    padding: 38px 18px 28px 18px;
+    border: 1px solid #e0e7ef;
+}
+.services h3 {
+    text-align: center;
+    color: #0d3a5a;
+    margin-bottom: 28px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 48px;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.15rem;
+    color: #1a2a3a;
+    width: 130px;
+    margin-bottom: 16px;
+    background: #f7fafd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(13,58,90,0.04);
+    padding: 18px 0 10px 0;
+    border: 1px solid #e0e7ef;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.service:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(13,58,90,0.10);
+    background: #eaf3fa;
+}
+.service .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 2px 6px rgba(13,58,90,0.10));
+}
+.service-mechanik {
+    background: #f7fafd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(13,58,90,0.04);
+    border: 1px solid #e0e7ef;
+    color: #444;
+    font-weight: normal;
+    transform: none;
+    z-index: auto;
+}
+.service-mechanik .icon {
+    color: inherit;
+    text-shadow: none;
+}
+.service-wulkanizacja {
+    background: #f7fafd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(13,58,90,0.04);
+    border: 1px solid #e0e7ef;
+    color: #444;
+    font-weight: normal;
+    transform: none;
+    z-index: auto;
+}
+.service-wulkanizacja .icon {
+    color: inherit;
+    text-shadow: none;
+}
+.location, .contact {
+    background: #f8f9fa;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 28px auto;
+    padding: 28px 22px 22px 22px;
+    box-shadow: 0 2px 8px rgba(13,58,90,0.04);
+    text-align: center;
+    border: 1px solid #e0e7ef;
+}
+.location h3, .contact h3 {
+    color: #0d3a5a;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.location p, .contact p {
+    color: #1a2a3a;
+    font-size: 1.13rem;
+    margin: 8px 0;
+}
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+.contact a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+.header-contact {
+    font-size: 0.95rem;
+    padding: 4px 7px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background: #fffde7;
+    border: 2.5px solid #1976d2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 12px rgba(255,214,0,0.13);
+    transition: background 0.2s, border 0.2s;
+}
+.header-contact:hover {
+    background: #0d3a5a;
+    border: 2.5px solid #ffd600;
+}
+.phone-icon {
+    font-size: 1.2rem;
+    color: #0d3a5a;
+    filter: drop-shadow(0 1px 2px rgba(13,58,90,0.10));
+}
+.header-phone {
+    color: #0d3a5a;
+    font-weight: 900;
+    font-size: 0.95rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.2s, text-shadow 0.2s;
+    text-shadow: 0 2px 8px rgba(255,214,0,0.18);
+}
+.header-contact:hover .header-phone {
+    color: #ffd600;
+    text-shadow: 0 2px 8px rgba(255,214,0,0.25);
+    text-decoration: underline;
+}
+.footer {
+    width: 100%;
+    background: linear-gradient(90deg, #0d3a5a 0%, #3a7bd5 100%);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 12px 0;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(13,58,90,0.08);
+}
+.footer a {
+    color: #ffe082;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-social {
+    display: inline-block;
+    margin-left: 18px;
+}
+.footer-fb {
+    color: #1976d2;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 6px;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.footer-fb:hover {
+    color: #0d3a5a;
+    text-decoration: underline;
+}
+.fb-icon {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+.header-fb {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+    text-decoration: none;
+    transition: transform 0.15s;
+}
+.header-fb:hover .fb-svg {
+    transform: scale(1.18) rotate(-8deg);
+    filter: drop-shadow(0 2px 6px #1976d2);
+}
+.fb-svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.15s, filter 0.15s;
+}
+.header-fb-outside {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.15s;
+    position: relative;
+    top: 2px;
+}
+.header-fb-outside .fb-svg {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.15s, filter 0.15s;
+}
+.header-fb-outside:hover .fb-svg {
+    transform: scale(1.18) rotate(-8deg);
+    filter: drop-shadow(0 2px 6px #1976d2);
+}
+@media (max-width: 1100px) {
+    .header-content {
+        flex-wrap: wrap;
+        padding: 6px 4px;
+        gap: 6px;
+    }
+    .workshop-name {
+        font-size: 0.95rem;
+        padding: 3px 6px;
+    }
+    .header-tags-outside .tag {
+        font-size: 0.7rem;
+        padding: 1px 4px 1px 4px;
+    }
+    .header-contact {
+        font-size: 0.85rem;
+        padding: 2px 4px;
+    }
+    .header-phone {
+        font-size: 0.85rem;
+    }
+    .header-fb-outside .fb-svg {
+        width: 15px;
+        height: 15px;
+    }
+    .services {
+        max-width: 98vw;
+        padding: 18px 4vw 14px 4vw;
+    }
+    .location, .contact {
+        max-width: 98vw;
+        padding: 18px 4vw 14px 4vw;
+    }
+}
+@media (max-width: 900px) {
+    .services-list {
+        gap: 24px 18px;
+    }
+    .service {
+        width: 100px;
+        font-size: 1rem;
+    }
+    .header-tags-outside {
+        margin-left: 8px;
+        gap: 6px;
+    }
+    .header-tags-outside .tag {
+        font-size: 0.7rem;
+        padding: 1px 4px 1px 4px;
+    }
+    .header-contact {
+        font-size: 0.85rem;
+        padding: 2px 4px;
+    }
+    .header-phone {
+        font-size: 0.85rem;
+    }
+    .header-fb-outside .fb-svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        padding: 8px 2vw 6px 2vw;
+    }
+    .logo {
+        height: 24px;
+        margin: 0 auto 2px auto;
+        display: block;
+    }
+    .workshop-name {
+        font-size: 0.9rem;
+        padding: 2px 4px;
+        margin: 0 auto 2px auto;
+        text-align: center;
+        border-radius: 6px;
+    }
+    .header-tags-outside {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto 2px auto;
+        gap: 2px;
+    }
+    .header-tags-outside .tag {
+        font-size: 0.6rem;
+        padding: 1px 3px 1px 3px;
+        border-radius: 5px;
+    }
+    .header-contact {
+        font-size: 0.8rem;
+        padding: 2px 3px;
+        margin: 0 auto 2px auto;
+        width: 100%;
+        justify-content: center;
+        border-radius: 8px;
+    }
+    .header-phone {
+        font-size: 0.8rem;
+    }
+    .header-fb-outside {
+        margin: 0 auto 2px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .header-fb-outside .fb-svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+body {
+    overflow-x: hidden;
+}
+main, .footer, .header {
+    width: 100%;
+    box-sizing: border-box;
+}
