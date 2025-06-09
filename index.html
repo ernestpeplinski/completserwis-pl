@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://completserwis.pl/img/logo-eurowarsztat.png">
     <meta property="og:locale" content="pl_PL">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/img/logo-eurowarsztat.png" type="image/png">
+    <link rel="icon" href="icons/car-mechanic.svg" type="image/svg+xml">
     <link rel="canonical" href="https://completserwis.pl/">
     <script type="application/ld+json">
     {
@@ -44,7 +44,9 @@
             <div class="header-left">
                 <img src="img/logo-eurowarsztat.png" alt="Complet Serwis – warsztat samochodowy Kościerzyna, logo" class="logo">
                 <span class="workshop-name">
-                  <span class="complet">Complet</span> <span class="serwis">Serwis</span>
+                  <span class="complet">Complet</span>
+                  <span class="workshop-divider"></span>
+                  <span class="serwis">Serwis</span>
                 </span>
             </div>
             <div class="header-center">
@@ -71,15 +73,15 @@
         <section class="services">
             <h3>Zakres usług</h3>
             <div class="services-list">
-                <div class="service service-mechanik"><span class="icon">🔧</span><span>Mechanik</span></div>
-                <div class="service"><span class="icon">❄️</span><span>Klimatyzacja</span></div>
-                <div class="service"><span class="icon">🛑</span><span>Hamulce</span></div>
-                <div class="service"><span class="icon">🛞</span><span>Zawieszenie</span></div>
-                <div class="service"><span class="icon">⚙️</span><span>Silnik</span></div>
-                <div class="service"><span class="icon">💻</span><span>Diagnostyka</span></div>
-                <div class="service"><span class="icon">🔊</span><span>Tłumiki</span></div>
-                <div class="service"><span class="icon">🚗</span><span>Auto Części</span></div>
-                <div class="service service-wulkanizacja"><span class="icon">🛞</span><span>Wulkanizacja</span></div>
+                <div class="service service-mechanik"><span class="icon"><img src="icons/car-mechanic.svg" alt="Mechanika ikona" /></span><span>Mechanika</span></div>
+                <div class="service"><span class="icon"><img src="icons/air-conditioning.svg" alt="Klimatyzacja ikona" /></span><span>Klimatyzacja</span></div>
+                <div class="service"><span class="icon"><img src="icons/car-break-icon.svg" alt="Hamulce ikona" /></span><span>Hamulce</span></div>
+                <div class="service"><span class="icon"><img src="icons/car-suspension.svg" alt="Zawieszenie ikona" /></span><span>Zawieszenie</span></div>
+                <div class="service"><span class="icon"><img src="icons/engine.svg" alt="Silnik ikona" /></span><span>Silnik</span></div>
+                <div class="service"><span class="icon"><img src="icons/car-muffler.svg" alt="Tłumiki ikona" /></span><span>Tłumiki</span></div>
+                <div class="service"><span class="icon"><img src="icons/diagnostics.svg" alt="Diagnostyka ikona" /></span><span>Diagnostyka</span></div>
+                <div class="service"><span class="icon"><img src="icons/car-parts.svg" alt="Auto części ikona" /></span><span>Auto Części</span></div>
+                <div class="service service-wulkanizacja"><span class="icon"><img src="icons/vulcanization.svg" alt="Wulkanizacja ikona" /></span><span>Wulkanizacja</span></div>
             </div>
         </section>
         <section class="location">
@@ -95,13 +97,50 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
+            <button class="navigate-btn" onclick="openMaps()">Prowadź do nas</button>
+            <div class="google-business">
+                <a href="https://g.co/kgs/owrvY5Y" target="_blank" rel="noopener" class="google-link">
+                    Zobacz naszą wizytówkę Google
+                </a>
+            </div>
         </section>
-        <section class="contact">
-            <h3>Kontakt</h3>
-            <p style="font-size:1.25em;font-weight:700;letter-spacing:1px;">
-                <span style="font-size:1.3em;vertical-align:middle;">📞</span>
-                <a href="tel:727470300" style="color:#1976d2;text-decoration:none;font-weight:900;">727 470 300</a>
+        <section class="reviews">
+            <h3>Opinie klientów</h3>
+            <div class="reviews-list">
+                <div class="review">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Klima serwisowana w tym warsztacie przez całą rodzinę. Łatwo się dogadać,nie poddają się nawet jak problem jest poważny. Cena uzasadniona. Samochód zabezpieczony przed zabrudzeniem-kierownica i fotel. Będę wracał i dziękuję za wielokrotną pomoc. Ossowski</div>
+                    <div class="review-author">– Mateusz M.</div>
+                </div>
+                <div class="review">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Warsztat godny polecenia. Podejscie do klienta jak i wiedza jaką panowie dysponuja naprawde robi wrażenie. Pelen profesjonalizm i uczciwość o ktorą tak cieżko w dzisiejszych czasach.Szkoda że takich warsztatów nie ma w mojej okolicy.</div>
+                    <div class="review-author">– Laki</div>
+                </div>
+                <div class="review">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Panowie Mechanicy znają się na swojej pracy. Bardzo dobre doradztwo jeśli chodzi o usterkę samochodu ,ale też o kupno części na miejscu. Pełna kultura oraz wszystko fachowo wyjaśnione.</div>
+                    <div class="review-author">– Marek L.</div>
+                </div>
+            </div>
+            <div class="google-business">
+                <a href="https://g.co/kgs/owrvY5Y" target="_blank" rel="noopener" class="google-link">
+                    Zobacz więcej opinii w Google
+                </a>
+            </div>
+        </section>
+        <section class="contact" style="background: linear-gradient(120deg, #ffd600 60%, #1976d2 100%); box-shadow: 0 6px 32px rgba(25,118,210,0.18); border: 2.5px solid #ffc107;">
+            <h3 style="color:#0d3a5a;font-size:1.7rem;letter-spacing:1.5px;text-shadow:0 2px 8px rgba(0,0,0,0.10);margin-bottom:18px;">Skontaktuj się z nami!</h3>
+            <p style="font-size:2em;font-weight:900;letter-spacing:2px;margin:0 0 12px 0;">
+                <span style="font-size:1.5em;vertical-align:middle;color:#1976d2;filter:drop-shadow(0 2px 8px #ffd600);">📞</span>
+                <a href="tel:727470300" style="color:#fff;background:#1976d2;padding:10px 32px;border-radius:32px;text-decoration:none;font-weight:900;box-shadow:0 4px 18px #1976d2a0,0 1.5px 8px #ffd60080;transition:background 0.2s, color 0.2s;display:inline-block;letter-spacing:2px;font-size:1.1em;">727 470 300</a>
             </p>
+            <div style="margin-top:22px;">
+                <a href="https://www.facebook.com/share/1BWQoBZPar/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;color:#fff;background:#1976d2;padding:8px 22px;border-radius:22px;text-decoration:none;font-weight:700;box-shadow:0 2px 8px #1976d2a0;transition:background 0.2s, color 0.2s;">
+                    <svg class="fb-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#ffd600" style="vertical-align:middle;"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+                    Odwiedź nas na Facebooku
+                </a>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -112,6 +151,14 @@
     <script src="script.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        function openMaps() {
+            const address = encodeURIComponent('ul. Wojska Polskiego 7, Kościerzyna');
+            const url =
+                /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                    ? `https://www.google.com/maps/dir/?api=1&destination=${address}`
+                    : `https://www.google.com/maps/dir/?api=1&destination=${address}`;
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 </html>
